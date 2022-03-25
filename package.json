@@ -1,0 +1,33 @@
+{
+  "name": "react-leaflet-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "TurtIeSocks <58572875+TurtIeSocks@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "yarn build && yarn server",
+    "build": "node esbuild.config.mjs",
+    "server": "node server/src/index.js",
+    "watch": "node esbuild.config.mjs --dev",
+    "dev": "nodemon ./server/index.js --watch server"
+  },
+  "engines": {
+    "node": ">=16",
+    "yarn": "1.22.x"
+  },
+  "dependencies": {
+    "@craftamap/esbuild-plugin-html": "0.3.1",
+    "@material-ui/core": "^4.12.1",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/styles": "^4.11.4",
+    "esbuild": "^0.14.22",
+    "express": "^4.17.1",
+    "leaflet": "^1.7.1",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-leaflet": "3.2.2"
+  }
+}
