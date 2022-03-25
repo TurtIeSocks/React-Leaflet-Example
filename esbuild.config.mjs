@@ -41,7 +41,7 @@ try {
       htmlPlugin({
         files: [
           {
-            entryPoints: ['/src/index.jsx'],
+            entryPoints: ['src/index.jsx'],
             filename: 'index.html',
             htmlTemplate: fs.readFileSync('./public/index.template.html'),
             // scriptLoading: 'defer',
